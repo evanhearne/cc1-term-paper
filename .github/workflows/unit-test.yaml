@@ -4,5 +4,5 @@ on: workflow-dispatch
 jobs:
   run-main-test:
     runs-on: ubuntu-latest
-      steps:
-        - run: "go test"
+    steps:
+      - run: "go test"
