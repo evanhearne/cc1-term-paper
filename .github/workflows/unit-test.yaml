@@ -5,4 +5,7 @@ jobs:
   run-main-test:
     runs-on: ubuntu-latest
     steps:
-      - run: "go test"
+      - name: "Checkout code"
+        uses: "actions/checkout@v2"
+      - name: "Run main test"
+        run: "go test"
