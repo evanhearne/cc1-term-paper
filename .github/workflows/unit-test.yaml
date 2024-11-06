@@ -1,6 +1,5 @@
 name: Unit Test
-# on: pull-request
-on: workflow_dispatch
+on: pull-request
 jobs:
   run-main-test:
     runs-on: ubuntu-latest
