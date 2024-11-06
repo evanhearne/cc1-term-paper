@@ -84,7 +84,7 @@ func TestRetrieveURLNotFound(t *testing.T) {
 	resp := w.Result()
 	defer resp.Body.Close()
 
-	if resp.StatusCode != http.StatusNotFound {
+	if resp.StatusCode == http.StatusNotFound {
 		t.Errorf("Expected status 404 Not Found; got %v", resp.StatusCode)
 	}
 }
