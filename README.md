@@ -73,7 +73,6 @@ The project includes unit tests to verify the core functionality of the URL shor
 1. Run Tests:
 
 ```bash
-Copy code
 go test
 ```
 This command will automatically run all tests in the project and provide a summary of the results.
