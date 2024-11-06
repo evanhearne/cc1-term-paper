@@ -41,13 +41,11 @@ url_shortener/
 2. Initialize the Project (if not already initialized) by running:
 
 ```bash
-Copy code
 go mod init url_shortener
 ```
 3. Run the Application:
 
 ```bash
-Copy code
 go run main.go
 ```
 The server will start on http://localhost:8080.
@@ -59,7 +57,6 @@ The server will start on http://localhost:8080.
     - Send a GET request to http://localhost:8080/shorten?url=<YOUR_URL>
     - Example:
     ```bash
-    Copy code
     curl "http://localhost:8080/shorten?url=http://example.com"
     ```
     - This will respond with a shortened URL in the format: http://localhost:8080/{shortURL}
