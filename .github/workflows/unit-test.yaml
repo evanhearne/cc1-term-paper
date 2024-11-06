@@ -1,5 +1,5 @@
 name: Unit Test
-on: pull-request
+on: pull_request
 jobs:
   run-main-test:
     runs-on: ubuntu-latest
