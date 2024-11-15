@@ -68,7 +68,7 @@ func (store *URLStore) RedirectHandler(w http.ResponseWriter, r *http.Request) {
 	shortURL := r.URL.Path[1:] // Get the URL path without the leading "/"
 	originalURL, exists := store.RetrieveURL(shortURL)
 	if !exists {
-		http.Error(w, "Short URL not found", http.StatusNotFound)
+		http.Error(w, "Shortened URL not found", http.StatusNotFound)
 		return
 	}
 	http.Redirect(w, r, originalURL, http.StatusFound)
